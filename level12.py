@@ -5,7 +5,7 @@ s = ssh('bandit12', 'bandit.labs.overthewire.org', password='5Te8Y4drgCRfCx8ugdw
 def runCommand(cmd):
 	sh.sendline(cmd)
 	print(sh.recvline(timeout=1))
-	
+
 sh = s.shell('/bin/sh')
 sh.sendline("whoami")
 sh.sendline("rm /tmp/niteshadow53/*")
@@ -30,4 +30,3 @@ for x in range(2):
 # print flag
 
 # shell.interactive()
-
